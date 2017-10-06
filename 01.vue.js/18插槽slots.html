@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习使用Vue</title>
+</head>
+<body>
+<div id="app">
+    <haha>
+        <div slot="title">woshi </div>
+        <div slot="footer">厉害了，我的歌 </div>
+
+    </haha>
+</div>
+<template id="tem_">
+    <div>
+        <!--若果你想实时的显示这些内容的话可以使用slot标签-->
+        <div class="title">
+            <slot name="title">
+
+            </slot>
+        </div>
+        <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet dolor in ipsa nihil rem repellendus soluta suscipit, veritatis voluptatum. Adipisci cum doloribus itaque labore minima officiis optio quia velit.
+        </div>
+        <div class="footer">
+            <slot name="footer">
+            </slot>
+        </div>
+    </div>
+</template>
+<script src="js/vue-2.44.js"></script>
+<script src="js/17插槽slot.js"></script>
+</body>
+</html>

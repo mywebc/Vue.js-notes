@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习使用Vue</title>
+</head>
+<body>
+<div id="app">
+    <!--v-on用来绑定事件的-->
+    <!--可以传参数，如果不传参，括号可以简写-->
+    <!--这个调用的函数写在methods里面-->
+    <span v-on:click="Click">点击我</span><br>
+    <!--我们也可以给一个元素绑定多个事件-->
+    <!--用花括号括起来，键为函数类型，值为你定义的逻辑函数-->
+    <!--注意你们，你没有书写对应的函数就会报错！-->
+    <span v-on="{click:Click,dblclick:onDouble}">点击我</span>
+    <!--对于表单他也很方便-->
+    <form v-on:submit="onSubmit($event)">
+        <input type="text">
+        <input type="submit">
+    </form>
+    <!--v-on:submit.prevent阻止浏览器的默认行为-->
+    <!--还有v-on:submit.stop阻止冒泡-->
+    <form v-on:submit.prevent="onSubmit">
+        <input type="text">
+        <input type="submit">
+    </form>
+    <!--如果我们监听的是键盘事件-->
+    <!--它也有一个这样的属性用来判断是否按下了enter键v-on:keyup.enter=''-->
+</div>
+<script src="js/vue-2.44.js"></script>
+<script src="js/main.js"></script>
+<script>
+</script>
+</body>
+</html>

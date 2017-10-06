@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习使用Vue</title>
+</head>
+<body>
+<div id="app">
+    <!--不会实时更新-->
+    <!--<input type="text" v-model.lazy='name'>-->
+    <!--去掉空格-->
+    <!--<input type="text" v-model.trim='name'>-->
+    <!--转化为数字-->
+    <input type="text" v-model.number='name'>
+    {{name}}
+</div>
+<script src="js/vue-2.44.js"></script>
+<script src="js/main.js"></script>
+<script>
+</script>
+</body>
+</html>

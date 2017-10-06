@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习使用Vue</title>
+</head>
+<body>
+<div id="app">
+    <div>
+        <input type="text" v-model="name">
+        <span v-show="name">你的名字是:{{name}}</span><br>
+    </div>
+    <div>
+        <input type="text" v-model="age">
+        <span v-show="age">你的年龄是:{{age}}</span><br>
+    </div>
+    <div>
+        <input type="text" v-model="sex">
+        <!--如果没有值就不显示有两种v-show='sex'或者v-if='sex'
+        区别在于如果没有前者就隐藏而后者直接删除dom元素-->
+        <span v-show="sex">你的性别是:{{sex}}</span><br>
+    </div>
+</div>
+<script src="js/vue-2.44.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+
+</script>
+</body>
+</html>

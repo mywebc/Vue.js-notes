@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习使用Vue</title>
+    <style>
+        .active{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+ <!--动态的绑定属性-->
+    <!--比如a链接的属性href-->
+    <a v-bind:href="url">点我</a>
+    <!--比如图片里的src属性也可以指定-->
+    <!--当然我们也可以指定类名-->
+    <!--active表示类名，isActive表示是否激活，如果后面写true即激活，反之一样-->
+    <a v-bind:class="{active: isActive}">点击我</a>
+</div>
+<script src="js/vue-2.44.js"></script>
+<script src="js/main.js"></script>
+<script>
+</script>
+</body>
+</html>

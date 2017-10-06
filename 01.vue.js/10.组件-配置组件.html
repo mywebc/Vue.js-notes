@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习使用Vue</title>
+    <style>
+
+        .sign{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--自定义一个赞组件-->
+<zan></zan>
+</div>
+<template id="sign-tem">
+
+    <button :class="{sign:sign}" @click="on_click()">点赞{{count}}</button>
+</template>
+<script src="js/vue-2.44.js"></script>
+<script src="js/zan.js"></script>
+<script>
+</script>
+</body>
+</html>

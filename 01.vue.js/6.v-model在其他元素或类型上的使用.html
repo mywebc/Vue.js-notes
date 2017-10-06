@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习使用Vue</title>
+</head>
+<body>
+<div id="app">
+    <!--在单选框中的应用-->
+    <!--<label>-->
+        <!--男-->
+        <!--<input type="radio" v-model="sex" value="male">-->
+    <!--</label>-->
+    <!--<label>-->
+        <!--女-->
+        <!--<input type="radio" v-model="sex" value="female">-->
+    <!--</label>-->
+    <!--<br>-->
+    <!--{{sex}}-->
+    <br>
+    <!--在复选框，可以多选,他会自动的插入数组，我们也可以在数组中设置默认值-->
+    <label>
+        男
+        <input type="checkbox" v-model="sex" value="male">
+    </label>
+    <label>
+        女
+        <input type="checkbox" v-model="sex" value="female">
+    </label>
+    <br>
+    {{sex}}
+    <br>
+    <!--<textarea v-model="article" id="" cols="30" rows="10"></textarea>-->
+    <select v-model="form" >
+        <option value="1">上海</option>
+        <option value="2">北京</option>
+    </select>
+    <br>
+    <!--多选-->
+    <select v-model="dest"  multiple>
+        <option value="1">上海</option>
+        <option value="2">北京</option>
+        <option value="3">上海</option>
+        <option value="4">北京</option>
+    </select>
+    {{dest}}
+    <br>
+</div>
+<script src="js/vue-2.44.js"></script>
+<script src="js/main.js"></script>
+<script>
+</script>
+</body>
+</html>
